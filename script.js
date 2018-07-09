@@ -201,7 +201,7 @@ setTimeout(function() {scrollTo(0,0)}, 1);
 				div.textContent = 'GAME OVER';
 				div.style.display = 'block';
 				document.body.append(back);
-				document.body.append(div);
+				back.append(div);
 				setTimeout(function(){back.style.opacity = 1}, 100)
 				document.onkeydown = null;
 				setTimeout(function(){div.style.opacity = 1}, 100)
@@ -413,6 +413,7 @@ setTimeout(function() {scrollTo(0,0)}, 1);
 					song.pause();
 				}, 28000)
 				back.className = 'finish-back';
+				back.append(div);
 				document.body.append(back);
 				setTimeout(function(){back.style.opacity = 1}, 1500)
 				document.onkeydown = null;
