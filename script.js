@@ -20,7 +20,7 @@ setTimeout(function() {scrollTo(0,0)}, 1);
 				tbody.append(createRow(cols))
 			}
 		}
-		createTable(100, 100, document.querySelector('#hud'));
+		createTable(100, 150, document.querySelector('#hud'));
 		const TD_SIZE = 45;
 		const MAP_SIZE = 6;
 		if(!localStorage.getItem('settings')) {
