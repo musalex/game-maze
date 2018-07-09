@@ -1,5 +1,26 @@
 setTimeout(function() {scrollTo(0,0)}, 1);		
-
+		function createCeil() {
+			return document.createElement('td');
+		}
+		function createRow(size) {
+			let tr = document.createElement('tr');
+			for (let i = 0; i < size; i++)
+				tr.append(createCeil());
+			return tr;
+		}
+		function createTable(rows, cols, el) {
+			let table = document.createElement('table');
+			let tbody = document.createElement('tbody');
+			table.append(tbody);
+			console.log(table)
+			el.before(table);
+			table.id = 'main';
+			// let tbody = table.firstElementChild;
+			for (let i = 0; i < rows; i++) {
+				tbody.append(createRow(cols))
+			}
+		}
+		createTable(100, 100, document.querySelector('#hud'));
 		const TD_SIZE = 45;
 		const MAP_SIZE = 6;
 		if(!localStorage.getItem('settings')) {
@@ -13,6 +34,7 @@ setTimeout(function() {scrollTo(0,0)}, 1);
 			}))
 		}
 		var settingsObj = JSON.parse(localStorage.getItem('settings'));
+		console.log(table)
 		var table = document.querySelector('#main').firstElementChild.children;
 		for(var i = 0, cells = []; i < table.length; i++) { 
 			cells[i] = table[i].children;
