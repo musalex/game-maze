@@ -1,0 +1,195 @@
+td {
+    width: 45px;
+    height: 45px;
+    background: black;
+    padding: 0;
+    /*border: 1px solid black;*/
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    z-index: 4;
+}
+#map {
+    position: fixed;
+    left : 20%;
+    top: 10%;
+    border: 1px solid white;
+}
+.closed {
+    display: none;
+}
+.finish {
+    background: green;
+}
+.wall {
+    background: url(textures/wall.png);
+    background-size: 100%;
+}
+
+.start {
+    background: red;
+}
+
+.hero {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.heroMap {
+    background: blue;
+}
+.void {
+    background: black;
+}
+.bomb {
+    background: yellow;
+    border-radius: 15px;
+}
+
+.droppedBomb {
+    background: red;
+    border-radius: 15px;
+    transition-duration: 3s;
+}
+
+
+.fist {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid cyan;
+    background: blue;
+    position: absolute;
+}
+.notExplored {
+    background: black !important;
+    border-radius: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+}
+
+table {
+    overflow-x: hidden;
+}
+
+.finish-block {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    background: #ccc; 
+    font-size: 28px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 4px;
+    color: red;
+    opacity: 0;
+    transition-duration: 3s;
+    z-index: 100;
+    font-family: Arial;
+    display: none;
+}
+
+.finish-back {
+    transition-duration: 6s;
+    position: fixed;
+    width: 2000px;
+    height: 2000px;
+    background: black;
+    opacity: 0;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+#hud {
+    position: fixed;
+    background: black;
+    color : white;
+    font-family: Arial;
+    /*width: 100px;*/
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    border: 2px solid red;
+}
+
+#finish-button {
+    background: green;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    color: yellow;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.key {
+    border-radius: 30px;
+    width : 15px;
+    height: 30px;
+    margin: auto auto;
+}
+.lastWall {
+    border-radius: 18px;
+}
+.magWall {
+    background: magenta;
+}
+.redWall {
+    background: red;
+}
+.whiteWall {
+    background: white;
+}
+#settings {
+    width: 40%;
+    /* height: 500px; */
+    background: #303133;
+    position: fixed;
+    top: 100px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.settRow {
+    height: 40px;
+    /* background: #ccc; */
+    margin: 20px;
+    line-height: 40px;
+    font-size: 21px;
+    color: #EFF5FF;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+}
+.settBtn {
+    background: #C05C48;
+    color: #eff5ff;
+    padding: 4px;
+    position: absolute;
+    right: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 130px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.chosen {
+    background: rgb(18, 199, 46) ;
+    box-shadow: 0 0 15px rgb(74, 209, 21);
+}
+
+#stats {
+    padding: 3px;
+}

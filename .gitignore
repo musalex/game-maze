@@ -1,0 +1,12 @@
+#archives
+/archives
+*.zip
+*.rar
+
+
+#logs
+debug.log
+todo.txt
+
+#test
+test.js
